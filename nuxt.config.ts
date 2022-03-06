@@ -8,10 +8,6 @@ export default defineNuxtConfig({
     link: [
       // { rel: "stylesheet", href: "https://awesome-lib.css" },
     ],
-    // please note that this is an area that is likely to change
-    // style: [
-    //   { children: ":root { color: red }", type: "text/css" },
-    // ],
   },
 
   // import scss form assets
@@ -25,8 +21,8 @@ export default defineNuxtConfig({
 
   serverMiddleware: [
     {
-      path: "/api",
-      handler: "~/server/index.ts",
+      path: "/api/v1",
+      handler: "~/server/src/server.ts",
     },
   ],
 });
