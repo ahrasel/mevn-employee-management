@@ -19,4 +19,7 @@ export default defineNuxtConfig({
 
   // plugins
   // plugins: [{ src: "~/static/js/bootstrap.bundle.min.js", mode: "client" }],
+  typescript: {
+    strict: true,
+  },
 });
