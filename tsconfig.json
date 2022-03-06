@@ -3,6 +3,6 @@
   "extends": "./.nuxt/tsconfig.json",
   // register types
   "compilerOptions": {
-    "types": ["@types/morgan", "@types/mongoose"]
+    "types": ["@types/morgan", "@types/mongoose", "@types/cors"]
   }
 }

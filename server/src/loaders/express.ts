@@ -1,7 +1,8 @@
 import { json } from "express";
 import morgan from "morgan";
+import { Express } from "express";
 
-export default async (app: any) => {
+export default async (app: Express) => {
   // HTTP request logger middleware for node.js
   app.use(morgan("dev"));
   // express json middleware
