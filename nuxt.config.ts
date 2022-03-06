@@ -22,4 +22,11 @@ export default defineNuxtConfig({
   typescript: {
     strict: true,
   },
+
+  serverMiddleware: [
+    {
+      path: "/api",
+      handler: "~/server/index.ts",
+    },
+  ],
 });
