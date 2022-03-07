@@ -1,12 +1,12 @@
-import { json } from "express";
-import morgan from "morgan";
-import { Express } from "express";
+import { json, Express } from 'express'
+import morgan from 'morgan'
 
-export default async (app: Express) => {
+export default (app: Express) => {
   // HTTP request logger middleware for node.js
-  app.use(morgan("dev"));
+  app.use(morgan('dev'))
   // express json middleware
-  app.use(json());
-  console.log("\x1b[36m%s\x1b[0m", "Express server Initialized");
-  return app;
-};
+  app.use(json())
+  // eslint-disable-next-line no-console
+  console.log('\x1B[36m%s\x1B[0m', 'Express server Initialized')
+  return app
+}

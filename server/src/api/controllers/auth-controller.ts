@@ -1,4 +1,4 @@
-import { Request, Response } from "express";
+import { Request, Response } from 'express'
 
 class AuthController {
   constructor() {}
@@ -6,4 +6,4 @@ class AuthController {
   login(req: Request, res: Response) {}
 }
 
-export default new AuthController();
+export default new AuthController()

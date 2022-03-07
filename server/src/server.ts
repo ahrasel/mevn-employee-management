@@ -1,17 +1,18 @@
-import express from "express";
-import loaders from "./loaders";
-const app = express();
+import express, { json } from 'express'
+import loaders from './loaders'
+const app = express()
 
-loaders(app);
+loaders(app)
 
-app.use(express.json());
+app.use(json())
 
-app.get("/", (req, res) => {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+app.get('/', (req, res) => {
   res
     .json({
-      message: "Api Worked 🌎🌍🌏",
+      message: 'Api Worked 🌎🌍🌏',
     })
-    .status(200);
-});
+    .status(200)
+})
 
-export default app;
+export default app
