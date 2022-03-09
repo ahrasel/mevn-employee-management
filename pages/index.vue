@@ -21,6 +21,7 @@
             placeholder="Password"
           />
         </div>
+
         <div class="form-group form-check mt-2">
           <input type="checkbox" class="form-check-input" />
           <label class="form-check-label text-black-50" for="exampleCheck1">

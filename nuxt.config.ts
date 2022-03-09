@@ -21,6 +21,7 @@ export default defineNuxtConfig({
     strict: true,
   },
 
+  // server api backend by nodejs
   serverMiddleware: [
     {
       path: '/api/v1',
