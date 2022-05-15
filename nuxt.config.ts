@@ -21,6 +21,11 @@ export default defineNuxtConfig({
     strict: true,
   },
 
+  // server: {
+  //   port: 4000,
+  //   host: 'localhost',
+  // },
+
   // server api backend by nodejs
   serverMiddleware: [
     {

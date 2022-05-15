@@ -7,9 +7,9 @@ router.post('/login', AuthController.login)
 
 router.post('/register', AuthController.createAccount)
 
-router.post('/update-profile', AuthController.updateProfile)
+router.patch('/update-profile', AuthController.updateProfile)
 
-router.post('/update-password', AuthController.updatePassword)
+router.patch('/update-password', AuthController.updatePassword)
 
 router.post('/forget-password', AuthController.forgetPassword)
 
